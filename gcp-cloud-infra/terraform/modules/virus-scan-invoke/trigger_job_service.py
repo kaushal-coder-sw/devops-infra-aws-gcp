@@ -34,7 +34,7 @@ def trigger_job():
             "gcloud", "beta", "run", "jobs", "execute", job_name,
             f"--region={region}",
             f"--args={bucket_name}",
-            f"--project=cloudshielddevelopment",
+            f"--project=virus_scan",
             "--update-env-vars", env_vars
         ], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
